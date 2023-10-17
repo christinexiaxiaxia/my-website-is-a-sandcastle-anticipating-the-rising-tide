@@ -5,7 +5,7 @@ var timeout = null;
 $(document).on('mousemove', function() {
     clearTimeout(timeout);
 
-	$('.wrapper').stop().animate({opacity: 1.0}, 2000, function() { // LENGTH OF TIME FOR BLUE FADE OUT ON MOUSE MOVE
+	$('.wrapper').stop().animate({opacity: 1.0}, 5000, function() { // LENGTH OF TIME FOR BLUE FADE OUT ON MOUSE MOVE
 		$('.wrapper').toggle('fast', function(){
 			$('.wrapper').animate({opacity: 1})
 		})
